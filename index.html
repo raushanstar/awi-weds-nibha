@@ -10,7 +10,7 @@
     <link rel="icon" href="img/both.png">
 
     <meta property="og:image"
-        content="https://github.com/raushanstar/awi-weds-nibha/blob/main/img/both.png" />
+        content="img/both.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -63,6 +63,23 @@
     </div>
     <div class="back"> <img src="img/back1.jpg" alt="music"></div>
     <div class="container-fluid description">
+    <!--music-->
+    <script>
+        function togglePlay() {
+            var myAudio = document.getElementById("myAudio");
+            return myAudio.paused ? myAudio.play() : myAudio.pause();
+        };
+    </script>
+
+    <div class="songs">
+        <div class="music animate__animated animate__swing animate__slow animate__infinite">
+            <audio id="myAudio" src="music/ringtone.mp3" preload="auto">
+            </audio>
+            <input class="animate__animated animate__flash animate__slow animate__infinite" type="button"
+                value="🎧" onclick="togglePlay()" />
+        </div>
+    </div>
+
         <p class="text-center mt-5 heading main ">॥श्री गणेशाय नमः॥</p>
         <div class="conatiner text-center main">
             <div class="row ganesh">
